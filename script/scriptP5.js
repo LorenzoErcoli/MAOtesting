@@ -3,12 +3,12 @@ function setup() {
 	h = window.innerHeight
   createCanvas(window.innerWidth, window.innerHeight);
   capture = createCapture(VIDEO);
-  capture.size(320*4, 240*4);
+
   capture.hide();
 }
 
 function draw() {
   background(255);
-  image(capture, 0, 0, window.innerWidth, window.innerHeight);
+  image(capture, 0, 0, w, h);
   filter(INVERT);
 }
