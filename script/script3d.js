@@ -82,20 +82,22 @@ import * as THREE from '../build/three.module.js';
 								object.children[0].material.color.g = 0.9;
 								object.children[0].material.color.b = 0.55;
 
-								// object.children[0].material.specular.r = 0;
-								// object.children[0].material.specular.g = 0;
-								// object.children[0].material.specular.b = 0;
+								object.children[0].material.specular.r = 0;
+								object.children[0].material.specular.g = 0;
+								object.children[0].material.specular.b = 0;
 
-								object.children[0].material.wireframe = true;
+								// object.children[0].material.wireframe = true;
 
 
 
+								console.log(object.children[0]);
 								scene.add( object );
 								
 
 							}, onProgress, onError );
 
 					} );
+
 
 
 				const Mat2 = new THREE.MeshPhongMaterial( { 
