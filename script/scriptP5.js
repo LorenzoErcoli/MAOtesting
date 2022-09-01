@@ -3,7 +3,7 @@ function setup() {
 	h = window.innerHeight
   createCanvas(window.innerWidth, window.innerHeight);
   capture = createCapture(VIDEO);
-
+  capture.size(window.innerWidth, window.innerHeight);
   capture.hide();
 }
 
