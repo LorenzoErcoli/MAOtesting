@@ -86,7 +86,7 @@ import * as THREE from '../build/three.module.js';
 								// object.children[0].material.specular.g = 0;
 								// object.children[0].material.specular.b = 0;
 
-								// object.children[0].material.wireframe = true;
+								object.children[0].material.wireframe = true;
 
 
 
