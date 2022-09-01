@@ -1,0 +1,48 @@
+newmtl mno3jm_material_0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd MNO-3_original_2M_OBJ_1_0.jpg
+bump mno3num.jpg -bm 1
+Ni 1.00
+newmtl mno5jm_material_0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd MNO-5_2M_OBJ_1_0.jpg
+bump mno5num.jpg -bm 1
+Ni 1.00
+newmtl nel3391_material_6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd NEL-33-9-1_2M_OBJ_1_0.jpg
+bump nel3391num.jpg -bm 1
+Ni 1.00
+newmtl prvuoc501jm_Material_0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd BodhFLMemento-1-exported01.jpg
+bump prvuoc501num.jpg -bm 1
+Ni 1.00
+newmtl prvuoc511jm_material_0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PRVI-540_2M_OBJ_1_0.jpg
+bump prvuoc511num.jpg -bm 1
+Ni 1.00
+newmtl rbmrch146jm_material_0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd RBM-RCh-146_2M_OBJ_1_0.jpg
+bump rbmrch146num.jpg -bm 1
+Ni 1.00
