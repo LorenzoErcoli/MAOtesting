@@ -1,14 +1,25 @@
 function setup() {
 	w = window.innerWidth;
 	h = window.innerHeight
-  createCanvas(window.innerWidth, window.innerHeight);
-  capture = createCapture(VIDEO);
-  capture.size(window.innerWidth, window.innerHeight);
+  createCanvas(displayWidth, displayHeight);
+  var constraints = {
+    audio: false,
+    video: {
+      facingMode: {
+        exact: "environment"
+      }
+    }    
+    //video: {
+      //facingMode: "user"
+    //} 
+  };
+  capture = createCapture(constraints);
+  
   capture.hide();
 }
 
 function draw() {
   background(255);
-  image(capture, 0, 0, w, h);
+  image(capture, 0, 0);
   filter(INVERT);
 }
