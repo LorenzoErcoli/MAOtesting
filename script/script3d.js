@@ -25,11 +25,12 @@ import * as THREE from '../build/three.module.js';
 				camera.position.z = 0;
 
 				
-				const background_image = new THREE.TextureLoader().load( "textures/kandao3.jpg");
-				const textureEquirec = new THREE.TextureLoader().load( "textures/kandao3.jpg");
+				const background_image = new THREE.TextureLoader().load( "/textures/kandao3.jpg");
+				const textureEquirec = new THREE.TextureLoader().load( "examples/textures/kandao3.jpg");
 
 				textureEquirec.mapping = THREE.EquirectangularReflectionMapping;
 				textureEquirec.encoding = THREE.sRGBEncoding;
+
 
 				// scene
 
@@ -71,7 +72,7 @@ import * as THREE from '../build/three.module.js';
 						materials.preload();
 
 						new OBJLoader( manager )
-							.setMaterials( materials)
+							// .setMaterials( materials)
 							.setPath( 'examples/obj/MNO-3_original_2M_OBJ_1_0/' )
 							.load( 'mno3jm.obj', function ( object ) {
 
@@ -82,9 +83,15 @@ import * as THREE from '../build/three.module.js';
 								object.children[0].material.color.g = 0.9;
 								object.children[0].material.color.b = 0.55;
 
-								object.children[0].material.specular.r = 0;
-								object.children[0].material.specular.g = 0;
-								object.children[0].material.specular.b = 0;
+								// object.children[0].material.specular.r = 0;
+								// object.children[0].material.specular.g = 0;
+								// object.children[0].material.specular.b = 0;
+
+								object.children[0].material.roughness = 0.1;
+								object.children[0].material.metalness = 1;
+
+								object.children[0].material.envMap = textureEquirec;
+								object.children[0].material.flatShading = true;
 
 								// object.children[0].material.wireframe = true;
 
